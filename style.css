@@ -1,0 +1,333 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BOOK INFO SECTION */
+
+
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+.infoContainer{
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    /* background-color: skyblue; */
+    background-color: rgb(241, 207, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoText{
+    width: 850px;
+}
+
+.firstHeading{
+    font-size: 52px;
+    line-height: 52px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    text-align: center;
+}
+
+.subInfoDiv{
+    padding: 0px 20px;
+}
+
+.secondHeading{
+    line-height: 42px;
+    font-size: 42px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.infoDivText{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+
+.georgiaText{
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bookAndBullets{
+    margin-top: 40px;
+    display: flex;
+}
+
+.bookImg{
+    width: 40%;
+    z-index: 111;
+}
+
+.bookImg img{
+    object-fit: cover;
+}
+
+.bulletsDiv{
+    width: 60%;
+    padding-left: 20px;
+}
+
+.bulletsDiv p{
+    font-size: 21px;
+    font-family: 'Roboto Slab', serif;
+    background-color: yellow;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 0px;
+}
+
+ol {list-style: none; counter-reset: li}
+
+li::before {content: counter(li); color: white;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+}
+
+li {counter-increment: li}
+
+.bulletsDiv ol {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.liBullets{
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.liBulletsSubText{
+    font-weight: 400;
+}
+
+
+/* SIGN UP SECTION */
+
+
+.signUpDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #202020; 
+    padding-bottom: 50px; 
+}
+
+.shelfImgDiv{
+    position: relative;
+    bottom: 40px;
+}
+
+.signupForm{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signupHeading{
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-align: center;
+}
+
+.inputDiv{
+    width: 60%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.emailError{
+    margin: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: red;
+    display: none;
+}
+
+.usernameError{
+    margin: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: red;
+    display: none;
+}
+
+.signUpBtn{
+    color: #202020;
+    font-family: 'Roboto Slab';
+    font-size: 26px;
+    background-color: skyblue;
+    padding: 20px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.belowBtnText{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    margin: 20px 0px;
+}
+
+.belowBtnText span{
+    color: green;
+    font-size: 16px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width:1027px){
+    .shelfImgDiv{
+        display: none;
+    }
+    .inputDiv{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0px;
+    }
+}
+ 
+@media (max-width: 790px) {
+    .firstHeading{
+        font-size: 42px;
+        line-height: 42px;
+        font-family: 'Roboto Slab', serif;
+        color: black;
+        text-align: center;
+    }
+    .secondHeading{
+        line-height: 32px;
+        font-size: 32px;
+        font-family: 'Roboto Slab', serif;
+        margin-top: 20px;
+    }
+    .infoDivText{
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 30px;
+        text-align: justify;
+    }
+    .break{
+        display: none;
+    }
+    .bookAndBullets{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .bookImg{
+        width: 80%;
+        z-index: 111;
+    }
+    .bulletsDiv{
+        width: 80%;
+        padding-left: 20px;
+    }
+    .signupForm{
+        width: 70%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        width: 90%;
+    }
+}
+ 
+@media (max-width: 580px) {
+    .firstHeading{
+        font-size: 32px;
+        line-height: 32px;
+        font-family: 'Roboto Slab', serif;
+        color: black;
+        text-align: center;
+    }
+    .secondHeading{
+        line-height: 22px;
+        font-size: 22px;
+        font-family: 'Roboto Slab', serif;
+    }
+    .infoDivText{
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 30px;
+        text-align: justify;
+    }
+    .signupForm{
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        width: 90%;
+    }
+}
+ 
+@media (max-width:480px) {
+.bookImg{
+    width: 100%;
+    z-index: 111;
+}
+.bulletsDiv{
+    width: 100%;
+    padding-left: 0px;
+}
+.signupHeading{
+    font-size: 28px;
+}
+}
+ 
+@media (max-width: 360px) {
+    .firstHeading{
+        font-size: 26px;
+        line-height: 26px;
+        font-family: 'Roboto Slab', serif;
+        color: black;
+        text-align: center;
+    }
+    .secondHeading{
+        line-height: 20px;
+        font-size: 20px;
+        font-family: 'Roboto Slab', serif;
+    }
+    .infoDivText{
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+ 

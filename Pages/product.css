@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #202020;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainText{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.bookDiv{
+    width: 40%;
+}
+
+.bookDiv img{
+    object-fit: cover;
+}
+
+.sideTextDiv{
+    width: 60%;
+    padding-left: 10px;
+    padding-top: 100px;
+}
+
+.bookLink{
+    text-decoration: none;
+    color: gold;
+    cursor: pointer;
+    font-size: 90px;
+    line-height: 90px;
+}
+
+.linkSpan{
+    color: white;
+    font-size: 50px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width:980px) {
+    .mainContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .bookLink{
+        text-decoration: none;
+        color: gold;
+        cursor: pointer;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .linkSpan{
+        color: white;
+        font-size: 38px;
+    }
+    .bookDiv{
+        width: 100%;
+    } 
+    .sideTextDiv{
+        width: 100%;
+        padding: 0px 0px;
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .bookLink{
+        text-decoration: none;
+        color: gold;
+        cursor: pointer;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .linkSpan{
+        color: white;
+        font-size: 24px;
+    }
+    .mainText{
+      
+        margin-top: 10rem;
+    }
+}
